@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: prod
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbgirl
+    username: root
+    password: 1200.0..
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#关闭缓存即时刷新
+#  freemarker:
+#    cache: false
+  thymeleaf:
+    cache: true
+
+  devtools:
+    restart:
+    #热部署生效
+      enabled: true
+    #设置重启的目录，添加哪个目录的文件需要re'start
+      additional-paths: src/main

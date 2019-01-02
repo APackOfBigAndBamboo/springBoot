@@ -1,0 +1,4 @@
+server:
+  servlet:
+    context-path: /women
+cupSize: B
